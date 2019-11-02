@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backround"
+    tools:context=".singleStudentDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/backround"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/loginicon2"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_gravity="center"
+                    app:civ_shadow_color="#FF1744"
+                    android:id="@+id/singleStudentImage"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:text="Student Information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+
+                        android:onClick="SendMassageStudent"
+                        android:id="@+id/studentMasage"
+                        android:tint="#F00303"
+                        android:src="@drawable/massage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="Send Massage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:elevation="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+
+                        android:onClick="SendCall"
+                        android:id="@+id/studentCall"
+                        android:tint="#F50505"
+                        android:src="@drawable/call"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:text="Call Phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="ID :"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentID"
+                    android:hint="  Student Id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Name :"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentName"
+                    android:hint="  Name"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Institute :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentInstitute"
+                    android:hint="  Institute"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Mobile :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentMobielNo"
+                    android:hint="  Mobile Numger"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="F Name :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentFname"
+                    android:hint="  Fathers Name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="M Name :"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentMname"
+                    android:hint="  Mother Name"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Email :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentEmail"
+                    android:hint="  Email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Batch :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentBatch"
+                    android:hint="  Batch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Gendere :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentGender"
+                    android:hint="  Gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Course :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentCourse"
+                    android:hint="  Course"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Course Fees :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentCourseFees"
+                    android:hint="  Course Fees"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Country :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentCountry"
+                    android:hint="  Country"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Birth Date :"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singleStudentBirthDate"
+                    android:hint="  Birth Date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Admission Date :"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singleStudentAddDate"
+                    android:hint="Admission Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Present Address :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentPresentAddr"
+                    android:hint=" Present Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Permanent Address :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentPermanentAddr"
+                    android:hint="  Permanent Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

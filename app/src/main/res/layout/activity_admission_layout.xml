@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="@drawable/backround"
+    tools:context=".AdmissionLayout">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/teacherAddImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/blu1"
+
+            />
+
+        <Button
+            android:padding="5dp"
+            android:id="@+id/teacherAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/addbuttondesign"
+            android:onClick="TeacherAddButton"
+            android:text=" Admission "
+            android:textAllCaps="false"
+            android:textColor="#F50057"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/teacherAddImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/teacherprofileImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="85dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/teacher"
+            app:civ_border_color="#F7F4F5"
+            app:civ_border_width="5dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="2"
+            app:civ_shadow_color="#F8F5F6"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#F50057"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text=" Teacher Admission Form"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="100dp"
+            android:id="@+id/teachertitleID"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/teacherprofileImage"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/studentAddImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/pink"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <Button
+                android:padding="5dp"
+                android:id="@+id/studentAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/addbuttondesign"
+                android:onClick="StudentAddButton"
+                android:text=" Admission "
+                android:textAllCaps="false"
+                android:textColor="#F50057"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/studentAddImageView2"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/studentprofileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="85dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/studentlogo"
+                app:civ_border_color="#F7F4F5"
+                app:civ_border_width="5dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#F8F5F6"
+                app:civ_shadow_radius="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/studenttitleID"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:text=" Student Admission Form "
+                android:textAlignment="center"
+                android:textColor="#FF1744"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/studentprofileImage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/employAddImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/b"
+
+                />
+
+            <Button
+                android:padding="5dp"
+                android:onClick="EmployAddButton"
+                android:textStyle="bold"
+                android:textColor="#F50057"
+                android:textSize="20sp"
+                android:id="@+id/employAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=" Admission "
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/addbuttondesign"
+                />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/employAddImageView2"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/employprofileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="85dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/employ"
+                app:civ_border_color="#F7F4F5"
+                app:civ_border_width="5dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="2"
+                app:civ_shadow_color="#F8F5F6"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#FF1744"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text=" Employ Admission Form "
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="100dp"
+                android:id="@+id/employtitleID"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/employprofileImage"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

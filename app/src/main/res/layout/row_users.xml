@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:contentPadding="3dp"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_gravity="center"
+            android:id="@+id/avatarIvAllUser"
+            android:fitsSystemWindows="true"
+            android:onClick="CircleImageViewListener"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/loginicon2"
+            app:civ_border_color="@null"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"/>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameTextAllUser"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="Persone Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/emailTextAllUser"
+                android:textColor="#000000"
+                android:text="Persone Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

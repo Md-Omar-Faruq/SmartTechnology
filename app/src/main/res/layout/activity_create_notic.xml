@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".CreateNotic">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:minHeight="50dp"
+                android:background="@drawable/edittextbackround2"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:id="@+id/noticTitleEditTextid"
+                android:gravity="start"
+                android:hint="Notic Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                tools:padding="15dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/ic_null_image"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/noticimageButtonid"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:minHeight="300dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:minHeight="50dp"
+                android:background="@drawable/edittextbackround2"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:id="@+id/noticEditTextid"
+                android:gravity="start"
+                android:hint="write somthing about your notic..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                tools:padding="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="UpdateNoticButton"
+            android:layout_gravity="end"
+            android:textColor="#FFFFFF"
+            android:id="@+id/noticUpdatettonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Upload" />
+
+    </LinearLayout>
+
+</ScrollView>

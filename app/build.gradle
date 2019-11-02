@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+
+        applicationId "com.example.smarttechnology"
+        minSdkVersion 20
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.google.android.material:material:1.1.0-alpha01'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-auth:18.1.0'
+    implementation 'com.google.firebase:firebase-storage:18.1.0'
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-database:18.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:5.0.0'
+    // Firebase Cloude Massage
+
+
+    // retrofit firebase support notification
+
+    // Autho Image slider
+    implementation 'com.github.smarteist:autoimageslider:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    // RecyclerView
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    // CardView
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    // Animated Itent View
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+    // Circle ImageView
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    // Country Code
+    implementation 'com.github.mukeshsolanki:country-picker-android:1.2.4'
+    implementation 'com.hbb20:ccp:2.2.9'
+    // Gif Image
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+    // Remember email and password
+    implementation 'io.paperdb:paperdb:2.6'
+    // Store and Retrive Image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // Image Crop
+    //implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+}

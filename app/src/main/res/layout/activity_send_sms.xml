@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/backround"
+    tools:context=".SendSms">
+
+    <EditText
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:id="@+id/massageNumber"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:gravity="top"
+        android:id="@+id/massageText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:hint="type your massage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:onClick="SendSMS"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:text="send"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

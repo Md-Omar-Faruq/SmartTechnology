@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#00E5FF"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:id="@+id/navigationHeader"
+    android:layout_height="250dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/navHeaderImageView"
+        android:src="@drawable/loginicon2"
+        />
+
+    <TextView
+        android:id="@+id/navHeaderName"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="User Name"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/navHeaderEmail"
+        android:textSize="16sp"
+        android:text="User Email"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

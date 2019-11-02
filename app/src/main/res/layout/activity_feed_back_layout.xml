@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#0BACE9"
+    android:gravity="center"
+    tools:context=".FeedBackLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:hint="Enter your Name"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/feedBackName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:hint="Enter your Email"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/feedBackEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:layout_marginTop="40dp"
+                android:hint="Please privide your feedback here"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/feedBackMassage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="SendButton"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonshape"
+                    android:id="@+id/feedBackSendButton"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:text="Send"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:onClick="ClearButton"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonshape"
+                    android:id="@+id/feedBackClearButton"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:text="Clear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

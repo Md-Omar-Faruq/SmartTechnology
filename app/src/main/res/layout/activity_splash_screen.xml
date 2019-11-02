@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround2"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="3"
+    tools:context=".Splash_screen">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:id="@+id/fristLayout"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:elevation="5dp"
+            android:src="@drawable/smarticon1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp" />
+
+    </LinearLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/lodingicon"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:id="@+id/secondLayout"
+        android:padding="15sp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:id="@+id/splashText"
+            android:elevation="5dp"
+            android:textColor="#00E5FF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Welcome To Smart Technology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

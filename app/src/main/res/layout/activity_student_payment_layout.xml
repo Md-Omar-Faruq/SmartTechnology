@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentPaymentLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/backround"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/loginicon2"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_gravity="center"
+                    app:civ_shadow_color="#FF1744"
+                    android:id="@+id/paymentStudentImage"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:text="Student Payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymenttudentID"
+                    android:hint="Student Id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="0.5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentName"
+                    android:hint="Name"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentMobielNo"
+                    android:hint="Mobile Numger"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="F Name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentFname"
+                    android:hint="Fathers Name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="M Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentMname"
+                    android:hint="Mother Name"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentEmail"
+                    android:hint="Email"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Batch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/singlestudentBatch"
+                    android:hint="Batch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Course"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paymentstudentCourse"
+                    android:hint="Course"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:padding="3dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="Payment Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:onClick="SelectPaymentDate"
+                        android:id="@+id/transtionDateI"
+                        android:src="@drawable/date_range"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/paymentDateTextView"
+                        android:layout_gravity="center"
+                        android:hint="Transtion Date"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_weight=".5"
+                android:padding="3dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Course Fees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_weight="1.5"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/paymentAmmount"
+                android:gravity="center_vertical"
+                android:hint="Course Fees"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Discount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/discountAmmount"
+                    android:hint="Discount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="After Total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:inputType="number"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/afterTotalAmmount"
+                    android:hint="After Total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Paid Ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/paidAmmount"
+                    android:hint="Paid Ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_weight=".5"
+                    android:padding="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Due Ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:inputType="number"
+                    android:layout_weight="1.5"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/dueAmmount"
+                    android:hint="Due Ammount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:onClick="PaymentButonListener"
+                android:id="@+id/paymentButtonId"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

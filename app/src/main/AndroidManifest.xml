@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smarttechnology">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@drawable/rr"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/rr"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".CreateNotic"></activity>
+        <activity android:name=".NoticBord" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/AppThemeNo" />
+        <activity android:name=".PostLayout" />
+        <activity android:name=".Payment_History_Layout" />
+        <activity android:name=".StudentPaymentLayout" />
+        <activity android:name=".PaymentList" />
+        <activity android:name=".statementlayout" />
+        <activity android:name=".Expance" />
+        <activity android:name=".CreatePostActivity" />
+        <activity android:name=".SendSms" />
+        <activity android:name=".singleEmployeeDetails" />
+        <activity android:name=".singleTeacherDetails" />
+        <activity android:name=".singleStudentDetails" />
+        <activity android:name=".FeedBackLayout" />
+        <activity android:name=".ShowAllEmployee" />
+        <activity android:name=".ShowAllTeacher" />
+        <activity android:name=".ShowAllStudent" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".ForgotPasswordLayout" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".RegistationForm" />
+        <activity android:name=".EmployAdmission" />
+        <activity android:name=".TeacherAddmission" />
+        <activity android:name=".StudentConsultancy" />
+        <activity android:name=".AdmissionLayout" />
+        <activity android:name=".StudentAdmission" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CourceLayout" />
+        <activity android:name=".ServiveLayout" />
+        <activity android:name=".Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

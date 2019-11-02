@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "872020649812",
+    "firebase_url": "https://smarttechnology-9eb33.firebaseio.com",
+    "project_id": "smarttechnology-9eb33",
+    "storage_bucket": "smarttechnology-9eb33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872020649812:android:963bb984ea86d9af",
+        "android_client_info": {
+          "package_name": "com.example.smarttechnology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872020649812-urs4u2vcl3cqbcql74tb1f0nvmiasg6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smarttechnology",
+            "certificate_hash": "70071739e9e715cab871422015452fd359d82cc4"
+          }
+        },
+        {
+          "client_id": "872020649812-tnkmiqq9bjn06vgqjc07ol0fptngqav4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDClMgbP_SwZb-LC8wbWpPN_W3PVLmVjGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872020649812-tnkmiqq9bjn06vgqjc07ol0fptngqav4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="#FC1B22"
+    app:contentPadding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+           android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Id"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHid"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Student Id"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Name"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHname"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Student Name"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Mobile"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHmobile"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Mobile Number"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Payment Date"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHpDate"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Payment Date"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Total Fees"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHTotalFees"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Total Ammount"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Discount"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHDiscount"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Discount Ammount"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="After Total"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHafterTotal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="After Total"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Paid Fees"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHpaid"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Paid Ammount"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Due Fees"
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:id="@+id/paymentHdue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:hint="Due Ammount"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

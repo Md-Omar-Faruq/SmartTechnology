@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="6dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/postCardView"
+    app:cardBackgroundColor="#F1F1F1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/post_profile_imageIv"
+                android:src="@drawable/loginicon2"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="4dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="User Name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#050505"
+                    android:id="@+id/post_user_nameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/post_TimeTv"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#CEC6C6"
+                        android:text="has been upload a post"
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/post_MoreBt"
+                android:src="@drawable/ic_more_black"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginBottom="2dp"
+            android:textColor="#000000"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:text="post description.."
+            android:padding="3dp"
+            android:textSize="14sp"
+            android:id="@+id/post_descriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"/>
+
+        <ImageView
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_margin="3dp"
+            android:id="@+id/post_imageIv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <TextView
+            android:textColor="#000000"
+            android:text="1.2k Like"
+            android:id="@+id/postLikeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F0F0"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableLeft="@drawable/ic_like"
+                android:id="@+id/likeButton"
+                android:text="Like"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:drawableLeft="@drawable/ic_comment"
+                android:id="@+id/commentButton"
+                android:text="Comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:drawableLeft="@drawable/ic_share"
+                android:id="@+id/shareButton"
+                android:text="Share"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

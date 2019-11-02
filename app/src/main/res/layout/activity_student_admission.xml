@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backround"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".StudentAdmission">
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_gravity="center"
+            android:id="@+id/studentCircleImageView"
+            android:onClick="CircleImageViewListener"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loginicon2"
+            app:civ_border_color="#FF3D00"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+        <EditText
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edittextbackround"
+            android:id="@+id/studentName"
+            android:layout_margin="10dp"
+            android:hint="  Student Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edittextbackround"
+            android:id="@+id/instituteName"
+            android:layout_margin="10dp"
+            android:hint="  Current Institute"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+        <EditText
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edittextbackround"
+            android:id="@+id/mobileNo"
+            android:layout_margin="10dp"
+            android:hint="  Mobile Number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edittextbackround"
+            android:id="@+id/fatherName"
+            android:layout_margin="10dp"
+            android:hint="  Father's Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+            <EditText
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/edittextbackround"
+                android:id="@+id/motherName"
+                android:layout_margin="10dp"
+                android:hint="  Mother's Name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/edittextbackround"
+                android:id="@+id/studentEmail"
+                android:layout_margin="10dp"
+                android:hint="  Email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <!-- Batch EditText -->
+            <EditText
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/edittextbackround"
+                android:id="@+id/batch"
+                android:layout_margin="10dp"
+                android:hint="  Batch"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <!-- Batch EditText End-->
+
+
+            <!-- Birth Date Picker Layout Is Start -->
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:onClick="SetBirthDateButton"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:hint=" Date Of Birth"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:id="@+id/dateOFbirth"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- Birth Date Picker Layout End -->
+
+            <!-- Gender Layout Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/studentRadioGroup"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Gender "
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                        <RadioButton
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Female "
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Male  "
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <!-- Gender Layout End -->
+
+    <!-- Selected Course Combobox Layout Is Starte -->
+
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="CourseSelectedButton"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text=" Choose Course "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:id="@+id/showcourseitemTextView"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+    <!-- Combobox Layout End -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Course Fees EditText -->
+                <EditText
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@drawable/edittextbackround"
+                    android:id="@+id/courseFees"
+                    android:layout_margin="10dp"
+                    android:hint="  Course Fees"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <!-- Course Fees EditText End-->
+
+            </LinearLayout>
+
+    <!-- Admission Date Picker Layout Is Start -->
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:onClick="SetAdmissionDateButton"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:hint=" Admission Date"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:id="@+id/admissionDate"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+    <!-- Date Picker Layout End -->
+
+    <!-- Country Picker Layout Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/countryPickerButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:onClick="CountryPickerButtonListener"
+                    android:text=" Select Country "
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:background="@drawable/buttonsliderdesignbackround"
+                    android:weightSum="3"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/countryPickerImageview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="#FFFFFF"
+                        android:hint="CountryName"
+                        android:textColorHint="#FFFFFF"
+                        android:id="@+id/countryPickerTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.3"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <!-- Country Picker Layout End -->
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/presentAddressTextView"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:text="Present Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/presentAddressEditText"
+                    android:hint="Enter Your Present Address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!-- Present Address Layout Statr-->
+
+            <!-- Permanent Address Layout Statr-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/permanentAddressTextView"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:text="Permanent Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/permanenttAddressEditText"
+                    android:hint="Enter Your Permanent Address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!-- Present Address Layout Statr-->
+
+            <Button
+                android:onClick="StudentAdmissionButton"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/angry_btn"
+                android:text="Admission"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#1577C2"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

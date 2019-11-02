@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showiIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/navProfileMenuId"
+            android:title="Profile"
+            android:icon="@drawable/nav_profile"
+            />
+        <item
+            android:id="@+id/navUserMenuId"
+            android:title="User"
+            android:icon="@drawable/nav_user"
+            />
+        <item
+            android:id="@+id/nav_chat"
+            android:title="Chat"
+            android:icon="@drawable/nav_chat"
+            />
+
+        </group>
+
+    <item android:title="communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/navFeedMenuId"
+                android:title="Feedback"
+                android:icon="@drawable/nav_chat"
+                />
+            <item
+                android:id="@+id/navShareMenuId"
+                android:title="Share"
+                android:icon="@drawable/nav_share"
+                />
+
+            <item
+                android:id="@+id/navSettingMenuId"
+                android:title="Setting"
+                android:icon="@drawable/nav_setting"
+                />
+
+            <item
+                android:id="@+id/navRattingMenuId"
+                android:title="Ratting This Apps"
+                android:icon="@drawable/nav_satr"
+                />
+
+            <item
+                android:id="@+id/navLogoutMenuId"
+                android:title="Logout"
+                android:icon="@drawable/nav_logout"
+                />
+
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

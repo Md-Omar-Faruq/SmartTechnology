@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Smart Technology</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="resetPasswordTitle">
+        You provde your email address
+        after
+        You will Click ResetButton Then you recive a link on your email,
+        you click on that link to reset your password
+    </string>
+
+    <string-array name="Course_Item">
+
+        <item>Office Application</item>
+        <item>HSC ICT</item>
+        <item>Hardware and Networking</item>
+        <item>CCTV</item>
+        <item>Linux</item>
+        <item>CCNA</item>
+        <item>MikroTik Router</item>
+        <item>Graphics Design</item>
+        <item>Multimedia and Web Design</item>
+        <item>Wordpress Themes Development</item>
+        <item>Web Design and Development Technology</item>
+        <item>Search Engine Optimization</item>
+        <item>Advanced freelancing</item>
+        <item>Programming Languag Java</item>
+        <item>Android Apps Development</item>
+        <item>Programming Languag C</item>
+        <item>Programming Languag C++</item>
+        <item>oracle pl/sql programming</item>
+
+    </string-array>
+
+    <string-array name="Transaction_List">
+
+        <item>Select Narration</item>
+        <item>Student Fees</item>
+        <item>Teacher Salary</item>
+        <item>Employee Salary</item>
+        <item>Office Expense</item>
+        <item>Service Fees</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

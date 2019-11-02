@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/studentmenu"
+        android:title="Student Admission"
+
+        />
+    <item
+        android:id="@+id/teachertmenu"
+        android:title="Teacher Admission"
+        />
+    <item
+        android:id="@+id/employtmenu"
+        android:title="Employ Admission"
+        />
+
+</menu>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    tools:context=".Expance">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:text="Income or Expense"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="3dp"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Select Transaction Date : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:onClick="SelectTranstionDate"
+                android:id="@+id/transtionDateI"
+                android:background="@null"
+                android:src="@drawable/date_range"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:textColorHint="#FFFFFF"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/transtionDateTextView"
+                android:layout_gravity="center"
+                android:hint="Transtion Date"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Select Income or Expense : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTransaction"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:id="@+id/debitbutton"
+                        android:layout_marginRight="20dp"
+                        android:text="Income "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:id="@+id/craditbutton"
+                        android:text="Expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Enter Ammount : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:id="@+id/transtionAmmountid"
+                android:drawableLeft="@drawable/coins"
+                android:textSize="20sp"
+                android:hint="  Ammount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Select Narration : "
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+                <Spinner
+                    android:id="@+id/transtionspnnierid"
+                    android:layout_weight="1.1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:onClick="TranstionButonListener"
+            android:id="@+id/TranstionButtonId"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

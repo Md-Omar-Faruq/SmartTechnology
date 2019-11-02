@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backround"
+    android:padding="5dp"
+    tools:context=".ServiveLayout">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:onClick="StudentConsultencyListener"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:background="#FFEA00"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:tint="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text=" Student Consultency "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:background="#F50057"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:tint="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/software"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text=" Customise Software Soliution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#1DE9B6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" Web Soliution "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#651FFF"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" Network Soliution "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#76FF03"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" Language Courses "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#2979FF"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/computer_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" Computer Traning "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#FF3D00"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/servising"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" Computer Sealse and Servising "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:background="#00E5FF"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:tint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cctv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text=" CCTV "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chadActivityToolBar"
+        android:background="#4C64EE"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <!-- Receiver Image -->
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profileIv"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginicon2"
+            app:civ_background_color="#00BCD4"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Receiver Name -->
+            <TextView
+                android:id="@+id/nameTv"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="His Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Receiver Status i.v online or offline -->
+            <TextView
+                android:id="@+id/userStatusTv"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chadActivityToolBar"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/chatLayout"
+        android:layout_alignParentBottom="true"
+        android:background="#0787EC"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/massageEt"
+            android:background="@drawable/nonbroder"
+            android:hint="Start Typing"
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:tint="#FF5722"
+            android:id="@+id/sendBtn"
+            android:background="@null"
+            android:src="@drawable/ic_send_button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</RelativeLayout>
